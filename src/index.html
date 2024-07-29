@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Buku Tamu</title>
+    <link rel="stylesheet" href="output.css">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+      .nav-link {
+        color: #ffffff;
+      }
+      
+      .nav-link.active {
+        color: #FFFFFF; /* Warna aktif */
+        font-weight: bold; /* Gaya aktif, misalnya bold */
+      }
+    </style>
+</head>
+<body class="font-Poppins">
+    <!-- Start Navbar -->
+    <nav class="bg-gradient-to-r from-[#0F6CC9] to-[#01071F] fixed w-full z-20 top-0 start-0 shadow-md">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="/img/logo bnn 2.png" class="h-10" alt="BNN logo">
+                <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">E-BOOK TAMU</span>
+            </a>
+            <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden  focus:outline-none focus:ring-2 text-gray-400 hover:bg-gray-700 focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+              </svg>
+          </button>
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                <ul class="flex flex-col p-4 md:p-0 mt-4 font-normal border border-gray-100/10 rounded-lg bg-gray-50/10 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent ">
+                    <li>
+                        <a href="#home" class="nav-link block py-2 px-3" aria-current="page" id="home-link">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about-us" class="nav-link block py-2 px-3" id="about-link">About</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="nav-link block py-2 px-3" id="contact-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Jumbotron -->
+    <div class=" bg-gradient-to-r from-[#0F6CC9] to-[#01071F]" id="home">
+      <div class="w-screen h-screen max-w-screen-xl p-4 mx-auto">
+        <div class="flex flex-col md:flex-row items-center justify-center md:justify-between w-full h-full gap-5">
+          <section class="w-full md:w-1/2 order-2 md:order-1">
+            <div class="flex justify-center md:justify-start flex-col text-white text-3xl md:text-4xl font-bold text-center md:text-start gap-4">
+              <h1 class="">Selamat Datang di</h1>
+              <h1 class="">BNN Kabupaten Banyumas</h1>
+              <p class="font-normal text-xl">#IndonesiaBersinar</p>
+              <div class="flex justify-center md:justify-start w-full">
+                <a href="page_inputTamu.html" class="text-[#01071F] md:w-fit w-full mx-auto md:mx-0 bg-[#FFF026] hover:bg-yellow-500 focus:outline-none flex justify-center md:justify-start focus:ring-4 focus:ring-yellow-300 font-bold rounded-full text-sm text-center dark:focus:ring-yellow-900 px-5 py-3 shadow-md">
+                  Get Started
+                </a>
+              </div>
+            </div>
+          </section>
+          <section class="w-full md:w-1/2 order-1 md:order-2 flex justify-center md:justify-end">
+            <img src="/img/war on drugs.png" class="w-3/4" alt="War on Drugs">
+          </section>
+        </div>
+      </div>
+        </div> 
+    </div>
+    <!-- End Jumbotron -->
+
+    <!-- About Us Section -->
+    <section id="about-us" class="py-16 bg-white">
+        <div class="max-w-screen-xl mx-auto flex flex-col lg:flex-row items-center px-4">
+            <!-- Photo -->
+            <div class="lg:w-1/2 mb-8 lg:mb-0 flex justify-center">
+                <img src="/img/about us.jpg" alt="About Us Photo" class="w-[465px] h-[465px] rounded-full shadow-2xl object-cover">
+            </div>
+            <!-- Description -->
+            <div class="lg:w-1/2 lg:pl-8">
+                <h2 class="text-3xl font-bold text-[#01071F] mb-4">About Us</h2>
+                <p class="text-lg text-[#01071F] mb-4 text-justify">
+                    BNNK Banyumas adalah singkatan dari Badan Narkotika Nasional Kabupaten Banyumas. BNNK Banyumas adalah lembaga pemerintah yang berfungsi untuk mencegah, memberantas, dan menangani masalah narkotika di wilayah Kabupaten Banyumas. 
+                    Melakukan berbagai kegiatan, termasuk sosialisasi, edukasi, pencegahan, rehabilitasi, serta penegakan hukum terkait narkotika.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="py-16 bg-[#D1E3F5]">
+    <div class="w-full mx-auto max-w-screen-xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14 p-4">
+      <div class="kotak1 w-full h-36 flex justify-center items-center rounded-[20px] bg-[#FFFFFF] p-9 gap-3 relative">
+        <div class="">
+          <h1 class="text-3xl text-center font-medium">20</h1>
+          <h1 class="text-2md text-center">Total tamu</h1>
+        </div>
+        <div class="absolute -top-5 left-1/2 -translate-x-1/2 p-2 rounded-full bg-[#1D3152] text-white">
+          <svg  width="32" height="30" viewBox="0 0 32 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <mask id="mask0_89_60" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="32" height="30">
+            <rect width="31.0732" height="29.878" fill="currentColor"/>
+            </mask>
+            <g mask="url(#mask0_89_60)">
+            <path d="M0 22.4085V20.4478C0 19.5556 0.474729 18.8294 1.42419 18.2692C2.37365 17.7089 3.6252 17.4288 5.17886 17.4288C5.45938 17.4288 5.72912 17.434 5.98806 17.4444C6.247 17.4548 6.49516 17.4807 6.73252 17.5222C6.43042 17.9579 6.20385 18.4144 6.0528 18.8916C5.90175 19.3688 5.82622 19.8668 5.82622 20.3855V22.4085H0ZM7.76829 22.4085V20.3855C7.76829 19.7216 7.95711 19.1147 8.33473 18.5648C8.71236 18.015 9.24643 17.5326 9.93694 17.1176C10.6275 16.7026 11.4528 16.3914 12.4131 16.1839C13.3733 15.9764 14.4145 15.8727 15.5366 15.8727C16.6803 15.8727 17.7322 15.9764 18.6925 16.1839C19.6527 16.3914 20.4781 16.7026 21.1686 17.1176C21.8591 17.5326 22.3878 18.015 22.7546 18.5648C23.1215 19.1147 23.3049 19.7216 23.3049 20.3855V22.4085H7.76829ZM25.247 22.4085V20.3855C25.247 19.846 25.1768 19.3377 25.0366 18.8605C24.8963 18.3833 24.6859 17.9372 24.4054 17.5222C24.6428 17.4807 24.8855 17.4548 25.1337 17.4444C25.3818 17.434 25.6354 17.4288 25.8943 17.4288C27.448 17.4288 28.6995 17.7038 29.649 18.2536C30.5984 18.8034 31.0732 19.5348 31.0732 20.4478V22.4085H25.247ZM10.5196 19.9187H20.586C20.3702 19.5037 19.7714 19.1406 18.7896 18.8294C17.8077 18.5181 16.7234 18.3625 15.5366 18.3625C14.3498 18.3625 13.2654 18.5181 12.2836 18.8294C11.3018 19.1406 10.7138 19.5037 10.5196 19.9187ZM5.17886 16.1839C4.46677 16.1839 3.85717 15.9401 3.35008 15.4525C2.84298 14.9649 2.58943 14.3788 2.58943 13.6941C2.58943 12.9886 2.84298 12.3973 3.35008 11.9201C3.85717 11.4428 4.46677 11.2042 5.17886 11.2042C5.91253 11.2042 6.52752 11.4428 7.02383 11.9201C7.52014 12.3973 7.76829 12.9886 7.76829 13.6941C7.76829 14.3788 7.52014 14.9649 7.02383 15.4525C6.52752 15.9401 5.91253 16.1839 5.17886 16.1839ZM25.8943 16.1839C25.1822 16.1839 24.5726 15.9401 24.0655 15.4525C23.5584 14.9649 23.3049 14.3788 23.3049 13.6941C23.3049 12.9886 23.5584 12.3973 24.0655 11.9201C24.5726 11.4428 25.1822 11.2042 25.8943 11.2042C26.628 11.2042 27.243 11.4428 27.7393 11.9201C28.2356 12.3973 28.4837 12.9886 28.4837 13.6941C28.4837 14.3788 28.2356 14.9649 27.7393 15.4525C27.243 15.9401 26.628 16.1839 25.8943 16.1839ZM15.5366 14.939C14.4577 14.939 13.5406 14.5759 12.7853 13.8497C12.0301 13.1235 11.6524 12.2417 11.6524 11.2042C11.6524 10.1461 12.0301 9.25905 12.7853 8.54322C13.5406 7.8274 14.4577 7.46948 15.5366 7.46948C16.6371 7.46948 17.5596 7.8274 18.304 8.54322C19.0485 9.25905 19.4207 10.1461 19.4207 11.2042C19.4207 12.2417 19.0485 13.1235 18.304 13.8497C17.5596 14.5759 16.6371 14.939 15.5366 14.939ZM15.5366 12.4492C15.9034 12.4492 16.2109 12.3299 16.4591 12.0912C16.7072 11.8526 16.8313 11.557 16.8313 11.2042C16.8313 10.8515 16.7072 10.5558 16.4591 10.3172C16.2109 10.0786 15.9034 9.95932 15.5366 9.95932C15.1698 9.95932 14.8623 10.0786 14.6141 10.3172C14.3659 10.5558 14.2419 10.8515 14.2419 11.2042C14.2419 11.557 14.3659 11.8526 14.6141 12.0912C14.8623 12.3299 15.1698 12.4492 15.5366 12.4492Z" fill="currentColor"/>
+            </g>
+            </svg> 
+        </div> 
+      </div>
+      <div class="kotak1 w-full h-36 flex justify-center items-center rounded-[20px] bg-[#FFFFFF] p-9 gap-3 relative">
+        <div class="">
+          <h1 class="text-3xl text-center font-medium">10</h1>
+          <h1 class="text-2md text-center">Rata-rata tamu per bulan</h1>
+        </div>
+        <div class="absolute -top-5 left-1/2 -translate-x-1/2 p-2 rounded-full bg-[#1D3152] text-white">
+          <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.25 6.31794H18V4.21196H2.25V6.31794ZM2.25 21.0598C1.63125 21.0598 1.10156 20.8536 0.660938 20.4412C0.220313 20.0288 0 19.533 0 18.9538V4.21196C0 3.63282 0.220313 3.13704 0.660938 2.72461C1.10156 2.31219 1.63125 2.10598 2.25 2.10598H3.375V0H5.625V2.10598H14.625V0H16.875V2.10598H18C18.6187 2.10598 19.1484 2.31219 19.5891 2.72461C20.0297 3.13704 20.25 3.63282 20.25 4.21196V10.1877C19.8937 10.0297 19.5281 9.89811 19.1531 9.79281C18.7781 9.68752 18.3937 9.60854 18 9.55589V8.42393H2.25V18.9538H9.3375C9.46875 19.3399 9.62344 19.7085 9.80156 20.0595C9.97969 20.4105 10.1906 20.7439 10.4344 21.0598H2.25ZM16.875 22.1128C15.3188 22.1128 13.9922 21.5995 12.8953 20.5728C11.7984 19.5461 11.25 18.3045 11.25 16.8479C11.25 15.3912 11.7984 14.1496 12.8953 13.1229C13.9922 12.0962 15.3188 11.5829 16.875 11.5829C18.4312 11.5829 19.7578 12.0962 20.8547 13.1229C21.9516 14.1496 22.5 15.3912 22.5 16.8479C22.5 18.3045 21.9516 19.5461 20.8547 20.5728C19.7578 21.5995 18.4312 22.1128 16.875 22.1128ZM18.7594 19.3487L19.5469 18.6116L17.4375 16.6373V13.6889H16.3125V17.0585L18.7594 19.3487Z" fill="white"/>
+            </svg>            
+        </div>
+      </div>
+      <div class="kotak1 w-full h-36 flex justify-center items-center rounded-[20px] bg-[#FFFFFF] p-9 gap-3 relative">
+        <div class="">
+          <h1 class="text-3xl text-center font-medium">5</h1>
+          <h1 class="text-2md text-center">Jumlah tamu hari ini</h1>
+        </div>
+        <div class="absolute -top-5 left-1/2 -translate-x-1/2 p-2 rounded-full bg-[#1D3152] text-white">
+          <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <mask id="mask0_89_63" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="27" height="27">
+            <rect width="27" height="27" fill="#D9D9D9"/>
+            </mask>
+            <g mask="url(#mask0_89_63)">
+            <path d="M3.09374 21.6563L9.08437 15.6657C9.51562 15.2344 10.05 15.0188 10.6875 15.0188C11.325 15.0188 11.8594 15.2344 12.2906 15.6657L15.1875 18.5625L22.3875 10.4344C22.5937 10.1907 22.8609 10.0688 23.1891 10.0688C23.5172 10.0688 23.7937 10.1813 24.0187 10.4063C24.225 10.6125 24.3328 10.861 24.3422 11.1516C24.3516 11.4422 24.2531 11.7 24.0469 11.925L16.7625 20.1375C16.3312 20.625 15.7969 20.8828 15.1594 20.911C14.5219 20.9391 13.9687 20.7188 13.5 20.25L10.6875 17.4375L4.78124 23.3438C4.53749 23.5875 4.25624 23.7094 3.93749 23.7094C3.61874 23.7094 3.33749 23.5875 3.09374 23.3438C2.84999 23.1 2.72812 22.8188 2.72812 22.5C2.72812 22.1813 2.84999 21.9 3.09374 21.6563ZM3.09374 14.9063L9.08437 8.91566C9.51562 8.48441 10.05 8.26879 10.6875 8.26879C11.325 8.26879 11.8594 8.48441 12.2906 8.91566L15.1875 11.8125L22.3875 3.68441C22.5937 3.44066 22.8609 3.31879 23.1891 3.31879C23.5172 3.31879 23.7937 3.43129 24.0187 3.65629C24.225 3.86254 24.3328 4.11097 24.3422 4.4016C24.3516 4.69222 24.2531 4.95004 24.0469 5.17504L16.7625 13.3875C16.3312 13.875 15.7969 14.1328 15.1594 14.161C14.5219 14.1891 13.9687 13.9688 13.5 13.5L10.6875 10.6875L4.78124 16.5938C4.53749 16.8375 4.25624 16.9594 3.93749 16.9594C3.61874 16.9594 3.33749 16.8375 3.09374 16.5938C2.84999 16.35 2.72812 16.0688 2.72812 15.75C2.72812 15.4313 2.84999 15.15 3.09374 14.9063Z" fill="white"/>
+            </g>
+            </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact Section -->
+    <footer id="contact" class="bg-gray-100">
+      <div class="w-full mx-auto max-w-screen-xl py-16 pb-0 px-4 gap-10">
+        <!-- Judul -->
+          <h2 class="text-3xl font-bold text-[#01071F] mb-10">Contact Us</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="">
+            <div class="flex gap-3 mb-3">
+              <!-- SVG -->
+              <h3 class="text-sm font-semibold text-[#01071F]">Alamat</h3>
+            </div>
+            <p class="text-justify">Jalan Raga Semangsang, No. 46, Sokanegara, Purwokerto Timur, Kabupaten Banyumas, Jawa Tengah 53115</p>
+          </div>
+          <div class="">
+            <div class="flex gap-3 mb-3">
+              <!-- SVG -->
+              <h3 class="text-sm font-semibold text-[#01071F]">Telepon</h3>
+            </div>
+            <p class="text-justify">081327190019</p>
+            <p class="text-justify">(0281)631011</p>
+          </div>
+          <div class="">
+            <div class="flex gap-3 mb-3">
+              <!-- SVG -->
+              <h3 class="text-sm font-semibold text-[#01071F]">Facebook</h3>
+            </div>
+            <p class="text-justify">Humas BNN RI</p>
+          </div>
+          <div class="">
+            <div class="flex gap-3 mb-3">
+              <!-- SVG -->
+              <h3 class="text-sm font-semibold text-[#01071F]">Call Center</h3>
+            </div>
+            <p class="text-justify">184</p>
+          </div>
+          <div class="">
+            <div class="flex gap-3 mb-3">
+              <!-- SVG -->
+              <h3 class="text-sm font-semibold text-[#01071F]">Email</h3>
+            </div>
+            <p class="text-justify">bnnkab_banyumas@bnn.go.id</p>
+          </div>
+          <div class="">
+            <div class="flex gap-3 mb-3">
+              <!-- SVG -->
+              <h3 class="text-sm font-semibold text-[#01071F]">Youtube</h3>
+            </div>
+            <p class="text-justify">humasnewsbnn</p>
+          </div>
+          <div class="lg:col-end-4">
+            <div class="flex gap-3 mb-3">
+              <!-- SVG -->
+              <h3 class="text-sm font-semibold text-[#01071F]">Instagram</h3>
+            </div>
+            <p class="text-justify">@cegah_narkoba_kab_banyumas</p>
+          </div>
+        </div>
+        <!-- Copyright -->
+        <div class="px-4 py-6 bg-gray-100 md:flex md:items-center">
+          <span class="text-sm text-gray-500 text-center  w-full">© Badan Narkoba Nasional (BNN) RI | 2024 
+          </span>
+        </div>
+      </div>
+    </footer>
+    <!-- End Contact Section -->
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const links = document.querySelectorAll('.nav-link');
+        
+        function setActiveLink() {
+          const scrollPosition = window.scrollY + 100; // Adjust for accurate positioning
+          links.forEach(link => {
+            const section = document.querySelector(link.getAttribute('href'));
+            if (section.offsetTop <= scrollPosition && section.offsetTop + section.offsetHeight > scrollPosition) {
+              link.classList.add('active');
+            } else {
+              link.classList.remove('active');
+            }
+          });
+        }
+
+        setActiveLink();
+        window.addEventListener('scroll', setActiveLink);
+        
+        links.forEach(link => {
+          link.addEventListener('click', (e) => {
+            e.preventDefault(); // Prevent default anchor behavior
+            const targetId = link.getAttribute('href').substring(1);
+            const targetSection = document.getElementById(targetId);
+            
+            window.scrollTo({
+              top: targetSection.offsetTop,
+              behavior: 'smooth'
+            });
+            
+            links.forEach(l => l.classList.remove('active'));
+            link.classList.add('active');
+          });
+        });
+      });
+    </script>
+</body>
+</html>
